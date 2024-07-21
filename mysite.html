@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Licensing Submission & Distributor Signup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <h1>Music Licensing Submission</h1>
+            <form id="musicForm">
+                <label for="artistName">Artist Name:</label>
+                <input type="text" id="artistName" name="artistName" required>
+
+                <label for="songTitle">Song Title:</label>
+                <input type="text" id="songTitle" name="songTitle" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="coverArt">Cover Art:</label>
+                <input type="file" id="coverArt" name="coverArt" accept="image/*" required>
+
+                <label for="audioFile">Audio File:</label>
+                <input type="file" id="audioFile" name="audioFile" accept="audio/*" required>
+
+                <label for="dsp">Select DSP:</label>
+                <select id="dsp" name="dsp" required>
+                    <option value="youtube">YouTube</option>
+                    <option value="soundcloud">SoundCloud</option>
+                    <option value="audiomack">Audiomack</option>
+                    <option value="vimeo">Vimeo</option>
+                    <option value="tiktok">TikTok</option>
+                </select>
+
+                <label for="localUpload">
+                    <input type="checkbox" id="localUpload" name="localUpload"> Enable local upload to YouTube Music library
+                </label>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="form-wrapper">
+            <h1>Sign Up as a Music Distributor</h1>
+            <form id="signupForm">
+                <label for="distributorName">Distributor Name:</label>
+                <input type="text" id="distributorName" name="distributorName" required>
+
+                <label for="distributorEmail">Email:</label>
+                <input type="email" id="distributorEmail" name="distributorEmail" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
